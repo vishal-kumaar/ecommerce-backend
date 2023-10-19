@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/vishal-kumaar/ecommerce-backend/issues"
   },
-  "homepage": "https://github.com/vishal-kumaar/ecommerce-backend#readme"
+  "homepage": "https://github.com/vishal-kumaar/ecommerce-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.3"
+  }
 }
