@@ -17,7 +17,7 @@ const productSchema = new mongoose.Schema(
         description: {
             type: String,
         },
-        photos: [
+        images: [
             {
                 secure_url: {
                     type: String,
@@ -27,15 +27,16 @@ const productSchema = new mongoose.Schema(
         ],
         stock: {
             type: Number,
+            min: 0,
             default: 0,
         },
         sold: {
             type: Number,
             default: 0,
         },
-        collectionId: {
+        category: {
             type: mongoose.Schema.Types.ObjectId,
-            ref: "Collection",
+            ref: "Category",
         },
     },
     {
